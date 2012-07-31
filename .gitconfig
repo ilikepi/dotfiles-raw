@@ -1,6 +1,5 @@
-[user]
-	email = ilikepi+github@gmail.com
-	name = James Blanding
+[include]
+  path = ~/.gitconfig.user
 [color]
 	ui = auto
 [push]
