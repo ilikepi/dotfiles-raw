@@ -1,0 +1,36 @@
+[user]
+	email = ilikepi+github@gmail.com
+	name = James Blanding
+[color]
+	ui = auto
+[push]
+	default = tracking
+[core]
+  pager = less -FiRX
+	excludesfile = ~/.gitignore
+[diff]
+  tool = customvim
+[difftool "customvim"]
+  cmd = exec_vim.sh -g -R -f -c 'set columns=175' -c 'wincmd =' -d $LOCAL $REMOTE
+[merge]
+  tool = customvim
+	conflictstyle = diff3
+[mergetool "customvim"]
+  cmd = exec_vim.sh -g -f -c 'set columns=260' -c 'wincmd =' -d $LOCAL $MERGED $REMOTE
+[alias]
+	graph = log --graph --decorate --oneline
+	merges = log --merges --decorate --oneline
+	ff = merge --ff-only
+	s = status -sb
+	non-ff = merge --no-ff --no-edit
+	desc = describe --tags
+	sh = show --shortstat
+	puff = pull --ff-only
+[color "status"]
+	changed = red bold
+	nobranch = red bold
+	untracked = red bold
+[color "branch"]
+	remote = red bold
+[color "diff"]
+	old = red bold
