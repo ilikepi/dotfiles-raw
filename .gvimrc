@@ -15,7 +15,12 @@ set colorcolumn=79,80,81
 
 set nu
 set nuw=4
-set guifont=Inconsolata:h14.00
+
+if has("gui_gtk2")
+  set guifont=Inconsolata\ Medium\ 14
+else
+  set guifont=Inconsolata:h14.00
+endif
 
 syntax on
 
