@@ -62,6 +62,9 @@ alias vimdiff="$vim_ro_opts -c 'wincmd =' -d"
 # 11/19/2009  rdoc interactive (deprecated)
 export RI='-T -f ansi -w 78'
 
+# 08/10/2012  reduce Cucumber's verbosity
+export CUCUMBER_FORMAT=progress
+
 # 07/31/2012  catch any changes we've made to PATH throughout.
 export PATH
 
