@@ -55,6 +55,7 @@ set printoptions=paper:letter
 autocmd FileType svn setlocal tw=0
 " autocmd FileType diff colorscheme darkspectrum
 autocmd FileType diff setlocal nowrap tw=0
+autocmd FileType gitcommit setlocal tw=72
 autocmd FileType ruby setlocal tw=0
 autocmd FileType yaml setlocal ai si
 autocmd FileType vundle setlocal nu
