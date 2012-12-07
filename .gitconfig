@@ -25,6 +25,7 @@
   desc = describe --tags
   sh = show --shortstat
   puff = pull --ff-only
+  fp = fetch --prune
 [color "status"]
   changed = red bold
   nobranch = red bold
