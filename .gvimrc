@@ -1,5 +1,5 @@
 " 06/09/2011  solarized options
-let g:solarized_hitrail=1
+let g:solarized_visibility='high'
 let g:solarized_diffmode='high'
 
 set background=dark
