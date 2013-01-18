@@ -50,6 +50,10 @@ set laststatus=2
 " enable search highlighting
 set hlsearch
 
+" show tab characters and trailing spaces by default
+set listchars=trail:·,tab:».
+set list
+
 set printoptions=paper:letter
 
 autocmd FileType svn setlocal tw=0
