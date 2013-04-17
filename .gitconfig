@@ -19,6 +19,7 @@
 [alias]
   graph = log --graph --decorate --oneline
   merges = log --merges --decorate --oneline
+  lo = log --oneline
   ff = merge --ff-only
   s = status -sb
   non-ff = merge --no-ff --no-edit
