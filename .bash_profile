@@ -1,6 +1,7 @@
 
 # 05/30/2011  bump histsize
-export HISTSIZE=2048
+# 03/15/2013  double histsize to 4K
+export HISTSIZE=4096
 
 # 05/30/2011  add hostname completion (from Gentoo)
 export HOSTFILE=~/.completion_hosts
