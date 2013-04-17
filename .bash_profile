@@ -14,6 +14,9 @@ complete -o default -A hostname rsync
 # 06/09/2011  ls alias
 alias ls='ls -F'
 
+# 03/10/2013  avoid annoying warnings
+alias scp='scp -o "ClearAllForwardings yes"'
+
 # 07/31/2012  consolidate some platform-specifc stuff
 case `uname -s` in
   Darwin)
