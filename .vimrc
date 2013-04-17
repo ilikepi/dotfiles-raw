@@ -60,9 +60,10 @@ autocmd FileType svn setlocal tw=0
 " autocmd FileType diff colorscheme darkspectrum
 autocmd FileType diff setlocal nowrap tw=0
 autocmd FileType gitcommit setlocal tw=72
+autocmd FileType markdown setlocal ts=4
 autocmd FileType ruby setlocal tw=0
-autocmd FileType yaml setlocal ai si
 autocmd FileType vundle setlocal nu
+autocmd FileType yaml setlocal ai si
 
 filetype plugin indent on
 
