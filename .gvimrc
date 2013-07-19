@@ -2,6 +2,9 @@
 let g:solarized_visibility='high'
 let g:solarized_diffmode='high'
 
+" bufexplorer options specific to gvim
+let g:bufExplorerShowTabBuffer=1
+
 set background=dark
 colorscheme solarized
 
