@@ -27,5 +27,6 @@ syntax on
 map <C-j> :bnext<CR>
 map <C-k> :bprev<CR>
 
-map <C-Q> :vert split<CR>:bnext<CR>:wincmd l<CR>:bdelete<CR>
 " map <C-q> :bdelete<CR>
+" map <C-Q> :vert split<CR>:bnext<CR>:wincmd l<CR>:bdelete<CR>
+map <C-Q> :e #<CR>:bwipe #<CR>
