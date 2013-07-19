@@ -79,6 +79,11 @@ let g:bufExplorerShowRelativePath=1
 let g:bufExplorerSplitOutPathName=0
 
 " configure vim-airline
+let g:airline_left_sep='▶'
+let g:airline_right_sep='◀'
+let g:airline_enable_syntastic=0
+let g:airline_enable_fugitive=0
+let g:airline_enable_bufferline=0
 
 " 05/02/2013  configure vim-markdown
 let g:vim_markdown_initial_foldlevel=1
