@@ -80,3 +80,6 @@ let g:bufExplorerSplitOutPathName=0
 
 " configure vim-powerline
 let g:Powerline_symbols='unicode'
+
+" 05/02/2013  configure vim-markdown
+let g:vim_markdown_initial_foldlevel=1
