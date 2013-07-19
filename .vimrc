@@ -15,7 +15,7 @@ Bundle 'gmarik/vundle'
 Bundle 'bufexplorer.zip'
 
 " fancy status bar
-Bundle 'Lokaltog/vim-powerline'
+Bundle 'bling/vim-airline'
 
 Bundle 'tpope/vim-surround'
 Bundle 'msanders/snipmate.vim'
@@ -78,8 +78,7 @@ let g:bufExplorerDetailedHelp=1
 let g:bufExplorerShowRelativePath=1
 let g:bufExplorerSplitOutPathName=0
 
-" configure vim-powerline
-let g:Powerline_symbols='unicode'
+" configure vim-airline
 
 " 05/02/2013  configure vim-markdown
 let g:vim_markdown_initial_foldlevel=1
