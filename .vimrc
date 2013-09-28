@@ -81,10 +81,8 @@ let g:bufExplorerSplitOutPathName=0
 " configure vim-airline
 let g:airline_left_sep=''
 let g:airline_right_sep=''
-let g:airline_enable_syntastic=0
-let g:airline_enable_branch=0
+let g:airline#extensions#branch#enabled=0
 let g:airline_section_b = '⎇ %{strpart(fugitive#head(), 0, 9)}'
-let g:airline_enable_bufferline=0
 let g:airline_theme='solarized'
 
 " 05/02/2013  configure vim-markdown
