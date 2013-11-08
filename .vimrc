@@ -87,3 +87,9 @@ let g:airline_theme='solarized'
 
 " 05/02/2013  configure vim-markdown
 let g:vim_markdown_initial_foldlevel=1
+
+" 11/08/2013  distilled from vim-unimpaired
+nnoremap <silent> [q :cprevious
+nnoremap <silent> ]q :cnext
+nnoremap <silent> [Q :cfirst
+nnoremap <silent> ]Q :clast
