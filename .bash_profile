@@ -18,6 +18,10 @@ alias ls='ls -F'
 # 03/10/2013  avoid annoying warnings
 alias scp='scp -o "ClearAllForwardings yes"'
 
+# 10/13/2013  OS X Wifi up/down
+alias wifiup='networksetup -setairportpower airport on'
+alias wifidown='networksetup -setairportpower airport off'
+
 # 07/31/2012  consolidate some platform-specifc stuff
 case `uname -s` in
   Darwin)
