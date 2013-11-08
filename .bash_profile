@@ -56,6 +56,7 @@ vim_cmd='exec_vim.sh -g'
 vim_ro_opts="$vim_cmd -R -c 'set columns=171'"
 
 export PSQL_EDITOR="$vim_cmd -f -c 'set filetype=sql'"
+export BUNDLE_EDITOR="$vim_cmd"
 export GIT_EDITOR="$vim_cmd -f"
 export SVN_EDITOR="$vim_cmd -f"
 
