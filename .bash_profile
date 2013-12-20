@@ -34,6 +34,15 @@ case `uname -s` in
     # 09/27/2011  make md5 more like md5sum
     alias md5='md5 -r'
 
+    # 12/10/2013  restore some default window positions
+    defaults write org.vim.MacVim MMTopLeftPoint -string '{70, 1174}'
+    defaults write com.apple.mail 'NSWindow Frame Main Window 0' \
+                                  -string '67 48 1425 1130 0 0 1920 1178 '
+    defaults write com.apple.mail 'NSWindow Frame Main Window 1' \
+                                  -string '96 48 1396 1130 0 0 1920 1178 '
+    defaults write com.apple.mail 'NSWindow Frame ActivityViewer' \
+                                  -string '1493 0 424 451 0 0 1920 1178 '
+
     ;;
   Linux)
     ;;
