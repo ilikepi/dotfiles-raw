@@ -37,7 +37,7 @@ case `uname -s` in
     # 12/10/2013  restore some default window positions
     defaults write org.vim.MacVim MMTopLeftPoint -string '{70, 1174}'
     defaults write com.apple.Safari 'NSWindow Frame BrowserWindowFrame' \
-                                  -string '203 87 1024 1091 0 0 1920 1178'
+                                  -string '203 87 1024 1091 0 0 1920 1178 '
     defaults write com.apple.mail 'NSWindow Frame Main Window 0' \
                                   -string '67 48 1425 1130 0 0 1920 1178 '
     defaults write com.apple.mail 'NSWindow Frame Main Window 1' \
