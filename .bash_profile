@@ -45,8 +45,15 @@ case `uname -s` in
     defaults write com.apple.mail 'NSWindow Frame ActivityViewer' \
                                   -string '1493 0 424 451 0 0 1920 1178 '
 
+
+    # 01/05/2014  chruby path is system-dependent
+    CHRUBY_PATH=${HOME}/usr/brew/opt/chruby/share/chruby/chruby.sh
     ;;
   Linux)
+    # 01/05/2014  chruby path is system-dependent
+    # CHRUBY_PATH=???
+    echo "DOH! Install chruby!"
+
     ;;
   *)
     # Hmm...
@@ -89,4 +96,8 @@ export CUCUMBER_FORMAT=progress
 export PATH
 
 # 05/30/2011  load RVM last
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+# 01/05/2014  use chruby instead
+# [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+[[ -n "$CHRUBY_PATH" ]] && [[ -s "$CHRUBY_PATH" ]] && . "$CHRUBY_PATH"
+export RUBIES=(${HOME}/usr/rubies/*)
+. "$(dirname "$CHRUBY_PATH")/auto.sh"
