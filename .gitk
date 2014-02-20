@@ -1,6 +1,6 @@
-set mainfont {{Lucida Grande} 9}
-set textfont {Monaco 9}
-set uifont {{Lucida Grande} 9 bold}
+set mainfont {{Lucida Grande} 11}
+set textfont {Monaco 11}
+set uifont {{Lucida Grande} 11 bold}
 set tabstop 8
 set findmergefiles 0
 set maxgraphpct 50
@@ -50,7 +50,7 @@ set indexcirclecolor green
 set circlecolors {white blue gray blue blue}
 set linkfgcolor blue
 set circleoutlinecolor black
-set geometry(main) 1398x1081+5+27
+set geometry(main) 1398x1081+1038+175
 set geometry(state) normal
 set geometry(topwidth) 1398
 set geometry(topheight) 401
