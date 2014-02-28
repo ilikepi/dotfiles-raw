@@ -12,6 +12,8 @@ colorscheme solarized
 
 set lines=72
 set columns=85
+set guioptions-=r
+set guioptions-=L
 
 " 01/05/2012  highlight the right-hand gutter
 set colorcolumn=79,80,81
