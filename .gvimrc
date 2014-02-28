@@ -10,8 +10,8 @@ colorscheme solarized
 
 " set visualbell
 
-set lines=72
-set columns=85
+set lines=87
+set columns=254
 set guioptions-=r
 set guioptions-=L
 
