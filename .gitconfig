@@ -10,7 +10,7 @@
 [diff]
   tool = customvim
 [difftool "customvim"]
-  cmd = exec_vim.sh -g -R -f -c 'set columns=175' -c 'wincmd =' -d $LOCAL $REMOTE
+  cmd = exec_vim.sh -g -R -f -c 'set columns=260' -c 'wincmd =' -d $LOCAL $REMOTE
 [merge]
   tool = customvim
   conflictstyle = diff3
