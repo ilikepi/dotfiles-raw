@@ -35,7 +35,7 @@ case `uname -s` in
     alias md5='md5 -r'
 
     # 12/10/2013  restore some default window positions
-    defaults write org.vim.MacVim MMTopLeftPoint -string '{70, 1174}'
+    defaults write org.vim.MacVim MMTopLeftPoint -string '{64, 1414}'
     defaults write com.apple.Safari 'NSWindow Frame BrowserWindowFrame' \
                                   -string '203 87 1024 1091 0 0 1920 1178 '
     defaults write com.apple.mail 'NSWindow Frame Main Window 0' \
