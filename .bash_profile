@@ -38,13 +38,6 @@ case `uname -s` in
     defaults write org.vim.MacVim MMTopLeftPoint -string '{64, 1414}'
     defaults write com.apple.Safari 'NSWindow Frame BrowserWindowFrame' \
                                   -string '203 87 1024 1091 0 0 1920 1178 '
-    defaults write com.apple.mail 'NSWindow Frame Main Window 0' \
-                                  -string '67 48 1425 1130 0 0 1920 1178 '
-    defaults write com.apple.mail 'NSWindow Frame Main Window 1' \
-                                  -string '96 48 1396 1130 0 0 1920 1178 '
-    defaults write com.apple.mail 'NSWindow Frame ActivityViewer' \
-                                  -string '1493 0 424 451 0 0 1920 1178 '
-
 
     # 01/05/2014  chruby path is system-dependent
     CHRUBY_PATH=${HOME}/usr/brew/opt/chruby/share/chruby/chruby.sh
