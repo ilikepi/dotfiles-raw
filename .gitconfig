@@ -3,7 +3,7 @@
 [color]
   ui = auto
 [push]
-  default = tracking
+  default = upstream
 [core]
   pager = less -FiRX
   excludesfile = ~/.gitignore
@@ -21,6 +21,7 @@
   merges = log --merges --decorate --oneline
   md = log --merges --date=short --pretty=format:'%C(yellow)%h %C(cyan)%cd %Creset%s'
   lo = log --oneline
+  ld = log --date=short --pretty=format:'%C(yellow)%h %C(cyan)%cd %C(red)%d %Creset%s'
   ff = merge --ff-only
   s = status -sb
   non-ff = merge --no-ff --no-edit
