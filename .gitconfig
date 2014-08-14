@@ -29,6 +29,7 @@
   sh = show --shortstat
   puff = pull --ff-only
   fp = fetch --prune
+  ds = diff --stat
 [color "status"]
   changed = red bold
   nobranch = red bold
