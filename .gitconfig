@@ -17,19 +17,19 @@
 [mergetool "customvim"]
   cmd = exec_vim.sh -g -f -c 'set columns=260' -c 'wincmd =' -d $LOCAL $MERGED $REMOTE
 [alias]
+  s = status -sb
+  desc = describe --tags
+  sh = show --shortstat
+  ds = diff --stat
   graph = log --graph --decorate --oneline
   merges = log --merges --decorate --oneline
   md = log --merges --date=short --pretty=format:'%C(yellow)%h %C(cyan)%cd %Creset%s'
   lo = log --oneline
   ld = log --date=short --pretty=format:'%C(yellow)%h %C(cyan)%cd %C(red)%d %Creset%s'
-  ff = merge --ff-only
-  s = status -sb
-  non-ff = merge --no-ff --no-edit
-  desc = describe --tags
-  sh = show --shortstat
-  puff = pull --ff-only
   fp = fetch --prune
-  ds = diff --stat
+  puff = pull --ff-only
+  ff = merge --ff-only
+  non-ff = merge --no-ff --no-edit
 [color "status"]
   changed = red bold
   nobranch = red bold
