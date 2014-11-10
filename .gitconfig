@@ -25,7 +25,7 @@
   merges = log --merges --decorate --oneline
   md = log --merges --date=short --pretty=format:'%C(yellow)%h %C(cyan)%cd %Creset%s'
   lo = log --oneline
-  ld = log --date=short --pretty=format:'%C(yellow)%h %C(cyan)%cd %C(red)%d %Creset%s'
+  ld = log --date=short --pretty=format:'%C(yellow)%h %C(cyan)%cd%C(red bold)%d %Creset%s'
   fp = fetch --prune
   puff = pull --ff-only
   ff = merge --ff-only
