@@ -68,7 +68,7 @@ vim_ro_opts="$vim_cmd -R -c 'set columns=171'"
 
 export PSQL_EDITOR="$vim_cmd -f -c 'set filetype=sql'"
 export BUNDLER_EDITOR="$vim_cmd"
-export GIT_EDITOR="$vim_cmd -f"
+export GIT_EDITOR="$vim_cmd -f -c 'set columns=85'"
 export SVN_EDITOR="$vim_cmd -f"
 
 # 11/28/2011  default Vim servername; used in 'gvimr' alias
