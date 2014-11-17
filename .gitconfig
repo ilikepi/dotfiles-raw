@@ -14,6 +14,7 @@
 [merge]
   tool = customvim
   conflictstyle = diff3
+  defaultToUpstream = false
 [mergetool "customvim"]
   cmd = exec_vim.sh -g -f -c 'set columns=260' -c 'wincmd =' -d $LOCAL $MERGED $REMOTE
 [alias]
