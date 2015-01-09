@@ -5,7 +5,7 @@
 [push]
   default = upstream
 [core]
-  pager = less -FiRX
+  pager = less -+F -iRX
   excludesfile = ~/.gitignore
 [diff]
   tool = customvim
