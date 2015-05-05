@@ -17,6 +17,7 @@
   defaultToUpstream = false
 [mergetool "customvim"]
   cmd = exec_vim.sh -g -f -c 'set columns=260' -c 'wincmd =' -d $LOCAL $MERGED $REMOTE
+  trustExitCode = true
 [alias]
   s = status -sb
   desc = describe --tags
