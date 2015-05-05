@@ -28,6 +28,7 @@
   mdp = log --merges --date=short --pretty=format:'%h %cd %s'
   lo = log --oneline
   ld = log --date=short --pretty=format:'%C(yellow)%h %C(cyan)%ad%C(red bold)%d %Creset%s'
+  mb = merge-base --fork-point master
   fp = fetch --prune
   puff = pull --ff-only
   ff = merge --ff-only
