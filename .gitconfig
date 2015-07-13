@@ -10,13 +10,13 @@
 [diff]
   tool = customvim
 [difftool "customvim"]
-  cmd = exec_vim.sh -g -R -f -c 'set columns=260' -c 'wincmd =' -d $LOCAL $REMOTE
+  cmd = exec_vim.sh -g -R -f -c 'set columns=260' -c 'wincmd =' -d \"$LOCAL\" \"$REMOTE\"
 [merge]
   tool = customvim
   conflictstyle = diff3
   defaultToUpstream = false
 [mergetool "customvim"]
-  cmd = exec_vim.sh -g -f -c 'set columns=260' -c 'wincmd =' -d $LOCAL $MERGED $REMOTE
+  cmd = exec_vim.sh -g -f -c 'set columns=260' -c 'wincmd =' -d \"$LOCAL\" \"$MERGED\" \"$REMOTE\"
   trustExitCode = true
 [alias]
   s = status -sb
