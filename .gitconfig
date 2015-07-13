@@ -21,7 +21,7 @@
 [alias]
   s = status -sb
   desc = describe --tags
-  sh = show --shortstat
+  sh = show --shortstat --abbrev-commit --decorate
   ds = diff --stat
   graph = log --graph --decorate --oneline
   merges = log --merges --decorate --oneline
