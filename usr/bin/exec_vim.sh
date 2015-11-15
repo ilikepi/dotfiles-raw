@@ -5,7 +5,11 @@
 
 case `uname -s` in
   Darwin)
-    vim_cmd='/Applications/MacVim.app/Contents/MacOS/Vim'
+    if [ -f /Applications/MacVim.app/Contents/MacOS/Vim ]; then
+      vim_cmd='/Applications/MacVim.app/Contents/MacOS/Vim'
+    elif [ -f "${HOME}/Applications/MacVim.app/Contents/MacOS/Vim" ]; then
+      vim_cmd="${HOME}/Applications/MacVim.app/Contents/MacOS/Vim"
+    fi
     ;;
   Linux)
     vim_cmd='/usr/bin/vim'
