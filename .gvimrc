@@ -39,3 +39,7 @@ map <C-Q> :e #<CR>:bwipe #<CR>
 " toggle high-visibility mode
 map <Leader>dp :set bg=light co=171 guifont=Inconsolata:h20.00<CR>:wincmd =<CR>
 map <Leader>pd :set bg=dark co=257 lines=87 guifont=Inconsolata:h14.00<CR>:wincmd =<CR>
+
+" toggle relative/absolute line numbers
+map <Leader>n :set nu<CR>
+map <Leader>N :set rnu<CR>
