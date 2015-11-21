@@ -1,12 +1,10 @@
 [include]
   path = ~/.gitconfig.user
-[color]
-  ui = auto
-[push]
-  default = upstream
 [core]
   pager = less -+F -iRX
   excludesfile = ~/.gitignore
+[push]
+  default = upstream
 [diff]
   tool = customvim
 [difftool "customvim"]
@@ -34,6 +32,8 @@
   puff = pull --ff-only
   ff = merge --ff-only
   non-ff = merge --no-ff --no-edit
+[color]
+  ui = auto
 [color "status"]
   changed = red bold
   nobranch = red bold
