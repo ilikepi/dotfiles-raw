@@ -5,6 +5,8 @@
   excludesfile = ~/.gitignore
 [push]
   default = upstream
+[log]
+  follow = true
 [diff]
   tool = customvim
 [difftool "customvim"]
