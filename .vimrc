@@ -18,7 +18,12 @@ Bundle 'bufexplorer.zip'
 Bundle 'bling/vim-airline'
 
 Bundle 'tpope/vim-surround'
-Bundle 'msanders/snipmate.vim'
+
+" a more recent fork of msanders/snipmate.vim (and its dependencies)
+Bundle 'MarcWeber/vim-addon-mw-utils'
+Bundle 'tomtom/tlib_vim'
+Bundle 'garbas/vim-snipmate'
+Bundle 'honza/vim-snippets'
 
 " markup plugins
 Bundle 'plasticboy/vim-markdown'
