@@ -1,0 +1,26 @@
+snippet desc
+	describe '${1:description}' do
+	
+		${2}
+	end
+	
+snippet cont
+	context '${1:description}' do
+	
+		${2}
+	end
+	
+snippet bef
+	before do
+		${0}
+	end
+	
+snippet itp
+	it '${1:description}' do
+		${2:pending}
+	end
+	
+snippet expd
+	expect do
+		${1:object}
+	end.to ${0}
