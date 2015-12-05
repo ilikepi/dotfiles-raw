@@ -45,11 +45,8 @@ Bundle 'candycode.vim'
 
 call vundle#end()
 
-" default tab/spacing settings
+" tabs are evil
 set et
-set ts=2
-set sw=2
-set tw=78
 
 " status bar is always visible
 set laststatus=2
@@ -65,11 +62,15 @@ set printoptions=paper:letter
 
 autocmd FileType svn setlocal tw=0
 " autocmd FileType diff colorscheme darkspectrum
+autocmd FileType conf setlocal tw=0 ts=2 sw=2
+autocmd FileType cucumber setlocal tw=0 ts=2 sw=2
 autocmd FileType diff setlocal nowrap tw=0
-autocmd FileType gitcommit setlocal tw=72
+autocmd FileType gitcommit setlocal tw=72 ts=2 sw=2
 autocmd FileType mkd setlocal ts=4
-autocmd FileType python setlocal ts=4
-autocmd FileType ruby setlocal tw=0
+autocmd FileType php setlocal tw=0 ts=2 sw=2
+autocmd FileType python setlocal ts=4 sw=4
+autocmd FileType ruby setlocal tw=0 ts=2 sw=2
+autocmd FileType sql setlocal tw=0 ts=4 sw=4
 autocmd FileType vundle setlocal nu
 autocmd FileType yaml setlocal ai si
 
