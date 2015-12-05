@@ -5,8 +5,8 @@ set nocompatible
 filetype off
 
 " 01/12/2012  update runtime path and initialize Vundle
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim/
+call vundle#begin()
 
 " 01/12/2012  Vundle should manage itself
 Bundle 'gmarik/vundle'
@@ -37,6 +37,8 @@ Bundle 'tpope/vim-cucumber'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'tpope/vim-vividchalk'
 Bundle 'candycode.vim'
+
+call vundle#end()
 
 " default tab/spacing settings
 set et
