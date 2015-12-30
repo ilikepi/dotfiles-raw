@@ -13,7 +13,7 @@ complete -o default -A hostname host
 complete -o default -A hostname rsync
 
 # 06/09/2011  ls alias
-alias ls='ls -F'
+alias ls='ls -FG'
 
 # 03/10/2013  avoid annoying warnings
 alias scp='scp -o "ClearAllForwardings yes"'
