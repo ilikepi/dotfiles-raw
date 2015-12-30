@@ -19,8 +19,9 @@ alias ls='ls -FG'
 alias scp='scp -o "ClearAllForwardings yes"'
 
 # 10/13/2013  OS X Wifi up/down
-alias wifiup='networksetup -setairportpower airport on'
-alias wifidown='networksetup -setairportpower airport off'
+# 11/15/2015  Use device name in Yosemite
+alias wifiup='networksetup -setairportpower en0 on'
+alias wifidown='networksetup -setairportpower en0 off'
 
 # 07/31/2012  consolidate some platform-specifc stuff
 case `uname -s` in
