@@ -9,7 +9,7 @@ set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#begin()
 
 " 01/12/2012  Vundle should manage itself
-Bundle 'gmarik/vundle'
+Bundle 'VimVundle/Vundle.vim'
 
 " buffer management (via vim-scripts repo)
 Bundle 'bufexplorer.zip'
