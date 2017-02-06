@@ -29,6 +29,10 @@ case `uname -s` in
     # 05/30/2011  add ~/usr/brew/bin
     PATH=${HOME}/usr/brew/bin:$PATH
 
+    # 08/22/2016  opt-out of Homebrew analytics (complement to
+    # `brew analytics off`)
+    export HOMEBREW_NO_ANALYTICS=1
+
     # 05/30/2011  git tab completion
     source ${HOME}/usr/brew/etc/bash_completion.d/git-completion.bash
 
