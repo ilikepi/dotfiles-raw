@@ -66,13 +66,14 @@ autocmd FileType conf setlocal tw=0 ts=2 sw=2
 autocmd FileType cucumber setlocal tw=0 ts=2 sw=2
 autocmd FileType diff setlocal nowrap tw=0
 autocmd FileType gitcommit setlocal tw=72 ts=2 sw=2
-autocmd FileType mkd setlocal ts=4
+autocmd FileType mkd setlocal ts=4 sw=4
+autocmd FileType markdown setlocal ts=4 sw=4
 autocmd FileType php setlocal tw=0 ts=2 sw=2
 autocmd FileType python setlocal ts=4 sw=4
 autocmd FileType ruby setlocal tw=0 ts=2 sw=2
 autocmd FileType sql setlocal tw=0 ts=4 sw=4
 autocmd FileType vundle setlocal nu
-autocmd FileType yaml setlocal ai si
+autocmd FileType yaml setlocal ai si sw=2
 
 autocmd BufRead,BufNewFile *.json setlocal filetype=javascript ts=2 sw=2
 
