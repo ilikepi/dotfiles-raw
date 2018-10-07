@@ -22,13 +22,17 @@
   s = status -sb
   desc = describe --tags
   sh = show --shortstat --abbrev-commit --decorate
+  diffro = diff --right-only
   ds = diff --stat
+  dsro = diff --stat --right-only
   graph = log --graph --decorate --oneline
   merges = log --merges --decorate --oneline
   md = log --merges --date=short --pretty=format:'%C(yellow)%h %C(cyan)%cd %Creset%s'
   mdp = log --merges --date=short --pretty=format:'%h %cd %s'
   lo = log --oneline
+  loro = log --oneline --right-only
   ld = log --date=short --pretty=format:'%C(yellow)%h %C(cyan)%ad%C(red bold)%d %Creset%s'
+  logrop = log --right-only --reverse -p
   mb = merge-base --fork-point master
   fp = fetch --prune
   puff = pull --ff-only
