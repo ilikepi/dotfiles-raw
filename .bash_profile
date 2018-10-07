@@ -33,6 +33,9 @@ case `uname -s` in
     # `brew analytics off`)
     export HOMEBREW_NO_ANALYTICS=1
 
+    # 02/06/2017  disable Homebrew auto-update
+    export HOMEBREW_NO_AUTO_UPDATE=1
+
     # 05/30/2011  git tab completion
     source ${HOME}/usr/brew-stable/etc/bash_completion.d/git-completion.bash
 
