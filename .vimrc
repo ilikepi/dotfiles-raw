@@ -15,7 +15,7 @@ Bundle 'VimVundle/Vundle.vim'
 Bundle 'bufexplorer.zip'
 
 " fancy status bar
-Bundle 'bling/vim-airline'
+Bundle 'vim-airline/vim-airline'
 
 Bundle 'tpope/vim-surround'
 
