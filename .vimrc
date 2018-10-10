@@ -9,40 +9,40 @@ set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#begin()
 
 " 01/12/2012  Vundle should manage itself
-Bundle 'VimVundle/Vundle.vim'
+Plugin 'VimVundle/Vundle.vim'
 
 " buffer management (via vim-scripts repo)
-Bundle 'bufexplorer.zip'
+Plugin 'bufexplorer.zip'
 
 " fancy status bar
-Bundle 'vim-airline/vim-airline'
-Bundle 'vim-airline/vim-airline-themes'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
-Bundle 'tpope/vim-surround'
+Plugin 'tpope/vim-surround'
 
 " a more recent fork of msanders/snipmate.vim (and its dependencies)
-Bundle 'MarcWeber/vim-addon-mw-utils'
-Bundle 'tomtom/tlib_vim'
-Bundle 'garbas/vim-snipmate'
-Bundle 'honza/vim-snippets'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'
 
 " markup plugins
-Bundle 'plasticboy/vim-markdown'
-Bundle 'timcharper/textile.vim'
-Bundle 'tpope/vim-haml'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'timcharper/textile.vim'
+Plugin 'tpope/vim-haml'
 
 " git plugins
-Bundle 'tpope/vim-git'
-Bundle 'tpope/vim-fugitive'
+Plugin 'tpope/vim-git'
+Plugin 'tpope/vim-fugitive'
 
 " RoR related
-Bundle 'tpope/vim-rails'
-Bundle 'tpope/vim-cucumber'
+Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-cucumber'
 
 " colorschemes
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'tpope/vim-vividchalk'
-Bundle 'candycode.vim'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'tpope/vim-vividchalk'
+Plugin 'candycode.vim'
 
 call vundle#end()
 
