@@ -88,7 +88,7 @@ alias gvimr="$vim_cmd --servername \$VIM_SERVER --remote"
 alias gvim1="$vim_cmd -c 'set columns=85'"
 alias gvim2="$vim_cmd -c 'set columns=171'"
 alias gvim4="$vim_cmd -c 'set columns=343'"
-alias vin="$vim_ro_opts -c 'set nowrap cc=' -"
+alias vin="$vim_ro_opts --not-a-term -c 'set nowrap cc=' -"
 alias vimdiff="$vim_ro_opts -c 'wincmd =' -d"
 
 # 11/19/2009  rdoc interactive (deprecated)
