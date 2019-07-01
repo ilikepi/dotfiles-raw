@@ -22,8 +22,10 @@
   s = status -sb
   desc = describe --tags
   sh = show --shortstat --abbrev-commit --decorate
+  sh1 = show --shortstat --abbrev-commit --oneline
   diffro = diff --right-only
   ds = diff --stat
+  dsn = diff --stat --name-only
   dsro = diff --stat --right-only
   graph = log --graph --decorate --oneline
   merges = log --merges --decorate --oneline
@@ -36,8 +38,10 @@
   mb = merge-base --fork-point master
   fp = fetch --prune
   puff = pull --ff-only
+  ffp = merge --ff-only @{push}
   ff = merge --ff-only
   non-ff = merge --no-ff --no-edit
+  cmend = commit --amend --no-edit
 [color]
   ui = auto
 [color "status"]
