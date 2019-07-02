@@ -45,7 +45,7 @@ case `uname -s` in
     # 12/10/2013  restore some default window positions
     defaults write org.vim.MacVim MMTopLeftPoint -string '{64, 1414}'
     defaults write com.apple.Safari 'NSWindow Frame BrowserWindowFrame' \
-                                  -string '203 87 1024 1091 0 0 1920 1178 '
+                                    -string '203 87 1024 1091 0 0 1920 1178 '
 
     # 01/05/2014  chruby path is system-dependent
     CHRUBY_PATH=${HOME}/usr/brew-stable/opt/chruby/share/chruby/chruby.sh
