@@ -37,7 +37,7 @@ case `uname -s` in
     export HOMEBREW_NO_AUTO_UPDATE=1
 
     # 05/30/2011  git tab completion
-    source ${HOME}/usr/brew-stable/etc/bash_completion.d/git-completion.bash
+    source /Library/Developer/CommandLineTools/usr/share/git-core/git-completion.bash
 
     # 09/27/2011  make md5 more like md5sum
     alias md5='md5 -r'
