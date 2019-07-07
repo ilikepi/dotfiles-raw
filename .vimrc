@@ -28,7 +28,6 @@ Plugin 'honza/vim-snippets'
 
 " markup plugins
 Plugin 'plasticboy/vim-markdown'
-Plugin 'timcharper/textile.vim'
 Plugin 'tpope/vim-haml'
 
 " git plugins
@@ -41,8 +40,6 @@ Plugin 'tpope/vim-cucumber'
 
 " colorschemes
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'tpope/vim-vividchalk'
-Plugin 'candycode.vim'
 
 call vundle#end()
 
