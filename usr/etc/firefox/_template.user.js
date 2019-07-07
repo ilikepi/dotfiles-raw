@@ -33,6 +33,13 @@ user_pref("browser.newtabpage.activity-stream.feeds.topsites", false);
 user_pref("browser.newtabpage.activity-stream.showSearch", false);
 user_pref("browser.newtabpage.activity-stream.showSponsored", false);
 
+// Enable Container Tabs.
+user_pref("privacy.userContext.enabled", true);
+user_pref("privacy.userContext.ui.enabled", true);
+
+// Always show the Container Tabs menu from the Tab "+" button.
+user_pref("privacy.userContext.longPressBehavior", 1);
+
 // Don't show any content on about:home.
 user_pref("browser.aboutHomeSnippets.updateUrl", "");
 
