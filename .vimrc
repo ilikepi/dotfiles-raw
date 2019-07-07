@@ -18,7 +18,10 @@ Plugin 'bufexplorer.zip'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 
+" general purpose coding
 Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-endwise'
+Plugin 'tpope/vim-commentary'
 
 " a more recent fork of msanders/snipmate.vim (and its dependencies)
 Plugin 'MarcWeber/vim-addon-mw-utils'
