@@ -54,6 +54,9 @@ user_pref("general.warnOnAboutConfig", false);
 // Don't display Unicode in URLs.
 user_pref("network.IDN_show_punycode", true);
 
+// Always show the full URL.
+user_pref("browser.urlbar.trimURLs", false);
+
 
 
 /*
