@@ -49,7 +49,7 @@ user_pref("extensions.formautofill.addresses.enabled", false);
 user_pref("extensions.formautofill.available", false);
 user_pref("signon.rememberSignons", false);
 
-// Warn when quitting with more than one tab is open.
+// Warn when quitting when more than one tab is open.
 user_pref("browser.showQuitWarning", true);
 
 // Don't quit the application when closing the last tab.
@@ -58,7 +58,7 @@ user_pref("browser.tabs.closeWindowWithLastTab", false);
 // Don't warn about accessing about:config.
 user_pref("general.warnOnAboutConfig", false);
 
-// Don't display Unicode in URLs.
+// Don't display Unicode characters in URLs.
 user_pref("network.IDN_show_punycode", true);
 
 // Always show the full URL.
@@ -78,7 +78,7 @@ user_pref("privacy.trackingprotection.enabled", true);
 user_pref("privacy.trackingprotection.cryptomining.enabled", true);
 user_pref("privacy.trackingprotection.fingerprinting.enabled", true);
 
-// Block all third-party cookies.
+// Block all third-party cookies by default.
 user_pref("network.cookie.cookieBehavior", 1);
 
 
@@ -87,7 +87,7 @@ user_pref("network.cookie.cookieBehavior", 1);
  * Extensions.
  */
 
-// Disable Encrypted Media Extensions.
+// Disable Encrypted Media Extensions API.
 user_pref("media.eme.enabled", false);
 
 // Disable Pocket.
@@ -116,10 +116,11 @@ user_pref("extensions.htmlaboutaddons.discover.enabled", false);
 // user_pref("permissions.default.geo", 2);
 // user_pref("permissions.default.microphone", 2);
 
-// https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API
+// Disable WebGL.
 user_pref("webgl.disabled", true);
 user_pref("webgl.enable-webgl2", false);
 
+// Disable sendBeacon support.
 // https://developer.mozilla.org/docs/Web/API/Navigator/sendBeacon
 user_pref("beacon.enabled", false);
 
@@ -183,5 +184,6 @@ user_pref("browser.sessionstore.resume_from_crash", false);
 // the session restore feature.  The default setting is 15000ms, which leads
 // to a fair amount of disk activity.  Since we don't really care about this
 // feature, we can vastly increase the interval in order to reduce unnecessary
-// disk activity.
+// disk activity.  It's not clear whether this has any effect if session
+// restore is disabled, as it is above.
 user_pref("browser.sessionstore.interval", 150000);
