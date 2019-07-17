@@ -22,7 +22,7 @@
   s = status -sb
   desc = describe --tags
   sh = show --shortstat --abbrev-commit --decorate
-  sh1 = show --shortstat --abbrev-commit --oneline
+  sh1 = show --shortstat --abbrev-commit --oneline --no-decorate
   diffro = diff --right-only
   ds = diff --stat
   dsn = diff --stat --name-only
