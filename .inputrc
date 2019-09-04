@@ -1,3 +1,4 @@
 set editing-mode vi
+set mark-symlinked-directories on
 
 "\C-x\C-V": dump-variables
