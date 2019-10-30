@@ -96,9 +96,7 @@ user_pref("plugin.disable_full_page_plugin_for_types", "application/pdf");
 
 // Disable recommendations in about:addons.
 user_pref("extensions.getAddons.showPane", false);
-user_pref("extensions.webservice.discoverURL", "");
-user_pref("extensions.getAddons.discovery.api_url", "");
-user_pref("extensions.htmlaboutaddons.discover.enabled", false);
+user_pref("extensions.htmlaboutaddons.recommendations.enabled", false);
 
 
 
