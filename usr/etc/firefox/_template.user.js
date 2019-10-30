@@ -40,10 +40,6 @@ user_pref("privacy.userContext.ui.enabled", true);
 // Always show the Container Tabs menu from the Tab "+" button.
 user_pref("privacy.userContext.longPressBehavior", 1);
 
-// Don't show any content on about:home.
-// FIXME: deprecated/obsolete in v69
-user_pref("browser.aboutHomeSnippets.updateUrl", "");
-
 // Don't store any form or login data for auto-fill.
 user_pref("browser.formfill.enable", false);
 user_pref("extensions.formautofill.addresses.enabled", false);
