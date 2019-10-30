@@ -131,6 +131,14 @@ user_pref("browser.send_pings.require_same_host", true);
  * Network behavior.
  */
 
+// Enable DoH via Quad9.
+// 0=off by default, 1=race (removed in FF69), 2=TRR first, 3=TRR only,
+// 4=race for stats (removed in FF69), 5=explicitly off
+user_pref("network.trr.mode", 2);
+user_pref("network.trr.uri", "https://dns.quad9.net/dns-query");
+//user_pref("network.trr.bootstrapAddress", "");
+
+
 // Disable explicit <link> prefetching.
 // https://developer.mozilla.org/docs/Web/HTTP/Link_prefetching_FAQ
 user_pref("network.prefetch-next", false);
