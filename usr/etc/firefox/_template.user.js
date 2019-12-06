@@ -59,6 +59,7 @@ user_pref("browser.tabs.closeWindowWithLastTab", false);
 
 // Don't warn about accessing about:config.
 user_pref("general.warnOnAboutConfig", false);
+user_pref("browser.aboutConfig.showWarning", false);
 
 // Don't display Unicode characters in URLs.
 user_pref("network.IDN_show_punycode", true);
