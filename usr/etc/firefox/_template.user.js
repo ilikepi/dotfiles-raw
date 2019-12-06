@@ -163,8 +163,7 @@ user_pref("privacy.donottrackheader.enabled", true);
 // Disable Health Reports.
 user_pref("datareporting.healthreport.uploadEnabled", false);
 
-// Disable Shield Studies. (Technically this has no effect when Health Reports
-// are disabled.)
+// Disable Shield Studies.
 user_pref("app.shield.optoutstudies.enabled", false);
 
 // Normandy is similar to the Shield Study system, but it is specifically
