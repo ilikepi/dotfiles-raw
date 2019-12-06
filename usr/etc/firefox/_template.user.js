@@ -19,6 +19,9 @@ user_pref("app.update.enabled", false);
 // Don't open a "What's New" tab on first launch after installing an update.
 user_pref("browser.startup.homepage_override.mstone", "ignore");
 
+// Don't add a "What's New" icon on first launch after installing an update.
+user_pref("browser.messaging-system.whatsNewPanel.enabled", false);
+
 // Don't check whether Firefox is the default browser.
 user_pref("browser.shell.checkDefaultBrowser", false);
 
