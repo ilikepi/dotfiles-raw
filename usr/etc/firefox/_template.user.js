@@ -2,7 +2,7 @@
 //                                                                    //
 //  Firefox user.js template of globally applicable settings.         //
 //                                                                    //
-//  Updated: 2019-12-06 (ghacksuserjs/ghacks-user.js @ 97043b0c)      //
+//  Updated: 2020-01-07 (ghacksuserjs/ghacks-user.js @ 18ad40a5)      //
 //                                                                    //
 ////////////////////////////////////////////////////////////////////////
 
@@ -14,7 +14,6 @@
 // a non-admin user.  Firefox will still check for updates and display a
 // pop-up when a one is available.
 user_pref("app.update.auto", false);
-user_pref("app.update.enabled", false);
 
 // Don't open a "What's New" tab on first launch after installing an update.
 user_pref("browser.startup.homepage_override.mstone", "ignore");
