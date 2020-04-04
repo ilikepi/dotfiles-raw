@@ -41,9 +41,6 @@ user_pref("browser.newtabpage.activity-stream.showSponsored", false);
 user_pref("privacy.userContext.enabled", true);
 user_pref("privacy.userContext.ui.enabled", true);
 
-// Always show the Container Tabs menu from the Tab "+" button.
-user_pref("privacy.userContext.longPressBehavior", 1);
-
 // Don't store any form or login data for auto-fill.
 user_pref("browser.formfill.enable", false);
 user_pref("extensions.formautofill.addresses.enabled", false);
