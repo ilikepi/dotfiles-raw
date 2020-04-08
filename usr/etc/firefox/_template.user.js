@@ -106,6 +106,10 @@ user_pref("extensions.htmlaboutaddons.recommendations.enabled", false);
  * Web APIs.
  */
 
+// When an iframed page causes a permissions prompt to appear, show the origin
+// of the third-party rather than the first-party that embeds the iframe.
+user_pref("permissions.delegation.enabled", false);
+
 // Block requests for access to desktop features.
 // NOTE: Keep default "Always Ask"; disabling can be used for fingerprinting.
 // user_pref("permissions.default.camera", 2);
