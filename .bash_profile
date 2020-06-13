@@ -26,9 +26,6 @@ alias wifidown='networksetup -setairportpower en0 off'
 # 07/31/2012  consolidate some platform-specifc stuff
 case `uname -s` in
   Darwin)
-    # 05/30/2011  add ~/usr/brew/bin
-    PATH=${HOME}/usr/brew/bin:$PATH
-
     # 08/22/2016  opt-out of Homebrew analytics (complement to
     # `brew analytics off`)
     export HOMEBREW_NO_ANALYTICS=1
@@ -51,7 +48,7 @@ case `uname -s` in
                                     -string '203 87 1024 1091 0 0 1920 1178 '
 
     # 01/05/2014  chruby path is system-dependent
-    CHRUBY_PATH=${HOME}/usr/brew/opt/chruby/share/chruby/chruby.sh
+    CHRUBY_PATH=$(brew --prefix chruby)/share/chruby/chruby.sh
     ;;
   Linux)
     # 01/05/2014  chruby path is system-dependent
