@@ -36,6 +36,9 @@ case `uname -s` in
     # 02/06/2017  disable Homebrew auto-update
     export HOMEBREW_NO_AUTO_UPDATE=1
 
+    # 09/11/2019  disable Homebrew auto-cleanup
+    export HOMEBREW_NO_INSTALL_CLEANUP=1
+
     # 05/30/2011  git tab completion
     source /Library/Developer/CommandLineTools/usr/share/git-core/git-completion.bash
 
