@@ -30,7 +30,6 @@ Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
 
 " markup plugins
-Plugin 'plasticboy/vim-markdown'
 Plugin 'tpope/vim-haml'
 
 " git plugins
@@ -99,9 +98,6 @@ let g:airline_right_sep=''
 let g:airline#extensions#branch#enabled=0
 let g:airline_section_b = '⎇ %{strpart(fugitive#head(), 0, 9)}'
 let g:airline_theme='solarized'
-
-" 05/02/2013  configure vim-markdown
-let g:vim_markdown_initial_foldlevel=1
 
 " 11/08/2013  distilled from vim-unimpaired
 nnoremap <silent> [q :cprevious
