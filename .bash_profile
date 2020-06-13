@@ -26,6 +26,9 @@ alias wifidown='networksetup -setairportpower en0 off'
 # 07/31/2012  consolidate some platform-specifc stuff
 case `uname -s` in
   Darwin)
+    # 06/12/2020  add path to binaries from primary PostgreSQL version
+    PATH=$(brew --prefix postgresql@11)/bin/:${PATH}
+
     # 08/22/2016  opt-out of Homebrew analytics (complement to
     # `brew analytics off`)
     export HOMEBREW_NO_ANALYTICS=1
