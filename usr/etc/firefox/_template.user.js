@@ -37,6 +37,9 @@ user_pref("browser.newtabpage.activity-stream.feeds.topsites", false);
 user_pref("browser.newtabpage.activity-stream.showSearch", false);
 user_pref("browser.newtabpage.activity-stream.showSponsored", false);
 
+// Clear topsites list.
+user_pref("browser.newtabpage.activity-stream.default.sites", "");
+
 // Enable Container Tabs.
 user_pref("privacy.userContext.enabled", true);
 user_pref("privacy.userContext.ui.enabled", true);
