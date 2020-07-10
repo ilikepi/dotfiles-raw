@@ -91,6 +91,7 @@ alias gvimr="$vim_cmd --servername \$VIM_SERVER --remote"
 alias gvim1="$vim_cmd -c 'set columns=85'"
 alias gvim2="$vim_cmd -c 'set columns=171'"
 alias gvim4="$vim_cmd -c 'set columns=343'"
+alias gvimsec="$vim_cmd -i /dev/null -n -c 'set columns=85'"
 alias vin="$vim_ro_opts --not-a-term -c 'set nowrap cc=' -"
 alias vimdiff="$vim_ro_opts -c 'wincmd =' -d"
 
@@ -109,3 +110,6 @@ export PATH
 [[ -n "$CHRUBY_PATH" ]] && [[ -s "$CHRUBY_PATH" ]] && . "$CHRUBY_PATH"
 export RUBIES=(${HOME}/usr/rubies/*)
 . "$(dirname "$CHRUBY_PATH")/auto.sh"
+trap - DEBUG
+#. "${HOME}/usr/share/bundler-bin-path.github/share/bundler-bin-path/auto.sh"
+. "${HOME}/usr/share/chruby-bundler-bin.github/share/chruby-bundler-bin/auto.sh"
