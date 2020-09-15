@@ -77,7 +77,7 @@ autocmd FileType sql setlocal tw=0 ts=4 sw=4
 autocmd FileType vundle setlocal nu
 autocmd FileType yaml setlocal ai si sw=2
 
-autocmd BufRead,BufNewFile *.json setlocal filetype=javascript ts=2 sw=2
+autocmd BufRead,BufNewFile *.json setlocal filetype=json ts=2 sw=2
 
 filetype plugin indent on
 
