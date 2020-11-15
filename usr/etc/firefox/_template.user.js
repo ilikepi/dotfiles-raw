@@ -48,6 +48,8 @@ user_pref("privacy.userContext.ui.enabled", true);
 user_pref("browser.formfill.enable", false);
 user_pref("extensions.formautofill.addresses.enabled", false);
 user_pref("extensions.formautofill.available", false);
+user_pref("extensions.formautofill.creditCards.available", false); // [FF57+]
+user_pref("extensions.formautofill.creditCards.enabled", false); // [FF56+]
 user_pref("signon.rememberSignons", false);
 
 // Warn when quitting when more than one tab is open.
