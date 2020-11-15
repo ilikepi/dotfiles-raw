@@ -132,6 +132,9 @@ user_pref("beacon.enabled", false);
 user_pref("browser.send_pings", false);
 user_pref("browser.send_pings.require_same_host", true);
 
+// Disable WASM support.
+user_pref("javascript.options.wasm", false);
+
 
 
 /*
