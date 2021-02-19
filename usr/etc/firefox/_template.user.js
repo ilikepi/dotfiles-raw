@@ -17,6 +17,9 @@ user_pref("app.update.auto", false);
 
 // Don't open a "What's New" tab on first launch after installing an update.
 user_pref("browser.startup.homepage_override.mstone", "ignore");
+user_pref("startup.homepage_welcome_url", "");
+user_pref("startup.homepage_welcome_url.additional", "");
+user_pref("startup.homepage_override_url", "");
 
 // Don't add a "What's New" icon on first launch after installing an update.
 user_pref("browser.messaging-system.whatsNewPanel.enabled", false);
