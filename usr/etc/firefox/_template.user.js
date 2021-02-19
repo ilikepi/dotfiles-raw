@@ -153,6 +153,9 @@ user_pref("network.trr.mode", 2);
 user_pref("network.trr.uri", "https://dns.quad9.net/dns-query");
 //user_pref("network.trr.bootstrapAddress", "");
 
+// Enable HTTPS-only mode.
+user_pref("dom.security.https_only_mode", true); // [FF76+]
+user_pref("dom.security.https_only_mode_send_http_background_request", false);
 
 // Disable explicit <link> prefetching.
 // https://developer.mozilla.org/docs/Web/HTTP/Link_prefetching_FAQ
