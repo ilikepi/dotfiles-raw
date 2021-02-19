@@ -157,6 +157,10 @@ user_pref("network.trr.uri", "https://dns.quad9.net/dns-query");
 user_pref("dom.security.https_only_mode", true); // [FF76+]
 user_pref("dom.security.https_only_mode_send_http_background_request", false);
 
+// Enable and enforce CRLite.
+user_pref("security.remote_settings.crlite_filters.enabled", true);
+user_pref("security.pki.crlite_mode", 2);
+
 // Disable explicit <link> prefetching.
 // https://developer.mozilla.org/docs/Web/HTTP/Link_prefetching_FAQ
 user_pref("network.prefetch-next", false);
