@@ -108,6 +108,9 @@ user_pref("plugin.disable_full_page_plugin_for_types", "application/pdf");
 user_pref("extensions.getAddons.showPane", false);
 user_pref("extensions.htmlaboutaddons.recommendations.enabled", false);
 
+// Disable bypass of 3rd-party extention install prompt.
+user_pref("extensions.postDownloadThirdPartyPrompt", false);
+
 
 
 /*
