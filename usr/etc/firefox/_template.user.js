@@ -103,6 +103,7 @@ user_pref("extensions.pocket.enabled", false);
 
 // Disable PDFjs.
 user_pref("pdfjs.disabled", true);
+user_pref("pdfjs.enableScripting", false);
 user_pref("plugin.disable_full_page_plugin_for_types", "application/pdf");
 
 // Disable recommendations in about:addons.
