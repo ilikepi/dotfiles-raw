@@ -82,6 +82,7 @@ user_pref("browser.contentblocking.category", "custom");
 
 // Enable all Tracking Protection features.
 user_pref("privacy.trackingprotection.enabled", true);
+user_pref("privacy.trackingprotection.socialtracking.enabled", true);
 user_pref("privacy.trackingprotection.cryptomining.enabled", true);
 user_pref("privacy.trackingprotection.fingerprinting.enabled", true);
 
