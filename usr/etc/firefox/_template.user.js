@@ -136,10 +136,6 @@ user_pref("webgl.enable-webgl2", false);
 // https://developer.mozilla.org/docs/Web/API/Navigator/sendBeacon
 user_pref("beacon.enabled", false);
 
-// Disable `ping` attribute of certain HTML tags (e.g. <a>).
-user_pref("browser.send_pings", false);
-user_pref("browser.send_pings.require_same_host", true);
-
 // Disable WASM support.
 user_pref("javascript.options.wasm", false);
 
@@ -173,7 +169,6 @@ user_pref("network.dns.disablePrefetch", true);
 
 // Disable speculative prefetching.
 user_pref("network.predictor.enabled", false);
-user_pref("network.predictor.enable-prefetch", false);
 user_pref("network.http.speculative-parallel-limit", 0);
 
 // Send DNT even though it won't really matter.
