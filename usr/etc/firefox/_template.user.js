@@ -2,7 +2,7 @@
 //                                                                    //
 //  Firefox user.js template of globally applicable settings.         //
 //                                                                    //
-//  Updated: 2021-04-26 (arkenfox/user.js @ cfd7cd01)                 //
+//  Updated: 2021-08-20 (arkenfox/user.js @ 7cdc76ec)                 //
 //                                                                    //
 ////////////////////////////////////////////////////////////////////////
 
