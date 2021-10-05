@@ -149,10 +149,10 @@ user_pref("javascript.options.wasm", false);
  */
 
 // Enable DoH via Quad9.
-// 0=off by default, 1=race (removed in FF69), 2=TRR first, 3=TRR only,
-// 4=race for stats (removed in FF69), 5=explicitly off
+// 0=off by default, 2=TRR first, 3=TRR only, 5=explicitly off
 user_pref("network.trr.mode", 2);
 user_pref("network.trr.uri", "https://dns.quad9.net/dns-query");
+// Set DNS server to query for IP of DoH resolver (mode 3 only).
 //user_pref("network.trr.bootstrapAddress", "");
 
 // Enable HTTPS-only mode.
