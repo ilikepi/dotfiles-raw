@@ -185,6 +185,7 @@ user_pref("privacy.donottrackheader.enabled", true);
 
 // Disable Health Reports.
 user_pref("datareporting.healthreport.uploadEnabled", false);
+user_pref("browser.ping-centre.telemetry", false);
 
 // Disable Shield Studies.
 user_pref("app.shield.optoutstudies.enabled", false);
@@ -192,6 +193,7 @@ user_pref("app.shield.optoutstudies.enabled", false);
 // Normandy is similar to the Shield Study system, but it is specifically
 // designed to test experimental preferences.
 user_pref("app.normandy.enabled", false);
+user_pref("app.normandy.api_url", "");
 
 // Disable telemetry.
 // https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/internals/preferences.html
