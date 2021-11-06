@@ -72,6 +72,10 @@ user_pref("network.IDN_show_punycode", true);
 // Always show the full URL.
 user_pref("browser.urlbar.trimURLs", false);
 
+// Disable location bar contextual suggestions.
+user_pref("browser.urlbar.suggest.quicksuggest", false);
+user_pref("browser.urlbar.suggest.quicksuggest.sponsored", false);
+
 
 
 /*
