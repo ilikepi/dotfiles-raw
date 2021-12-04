@@ -35,6 +35,7 @@
   loro = log --oneline --right-only
   ld = log --date=short --pretty=format:'%C(yellow)%h %C(cyan)%ad%C(red bold)%d %Creset%s'
   logrop = log --right-only --reverse -p
+  std = stash list --pretty=format:'%C(yellow)%h %C(cyan)%ai %C(red bold)%gd%n    %Creset%s'
   mb = merge-base --fork-point master
   fp = fetch --prune
   puff = pull --ff-only
