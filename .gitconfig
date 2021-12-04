@@ -20,6 +20,7 @@
   trustExitCode = true
 [alias]
   s = status -sb
+  s1 = status -sb -uno
   desc = describe --tags
   sh = show --shortstat --abbrev-commit --decorate
   sh1 = show --shortstat --abbrev-commit --oneline --no-decorate
