@@ -62,8 +62,9 @@ user_pref("signon.autofillForms", false);
 user_pref("signon.generation.enabled", false);
 user_pref("signon.rememberSignons", false);
 
-// Warn when quitting when more than one tab is open.
-user_pref("browser.showQuitWarning", true);
+// Warn when closing a window with more than one tab.
+user_pref("browser.tabs.warnOnClose", true);
+user_pref("browser.warnOnQuitShortcut", false);
 
 // Don't quit the application when closing the last tab.
 user_pref("browser.tabs.closeWindowWithLastTab", false);
