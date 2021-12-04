@@ -35,6 +35,7 @@ user_pref("browser.newtab.preload", false);
 // Disable all known content categories for the new tab page, just in case.
 user_pref("browser.newtabpage.activity-stream.feeds.section.highlights", false);
 user_pref("browser.newtabpage.activity-stream.feeds.section.topstories", false);
+// XXX: .snippets has been false since FF89
 user_pref("browser.newtabpage.activity-stream.feeds.snippets", false);
 user_pref("browser.newtabpage.activity-stream.feeds.topsites", false);
 user_pref("browser.newtabpage.activity-stream.showSearch", false);
@@ -57,6 +58,8 @@ user_pref("extensions.formautofill.creditCards.enabled", false); // [FF56+]
 user_pref("signon.rememberSignons", false);
 
 // Warn when quitting when more than one tab is open.
+// XXX: migrate to browser.warnOnQuitShortcut ?
+//      arkenfox/user.js @ 58d0161b, 6027aaa4
 user_pref("browser.showQuitWarning", true);
 
 // Don't quit the application when closing the last tab.
@@ -72,9 +75,17 @@ user_pref("network.IDN_show_punycode", true);
 // Always show the full URL.
 user_pref("browser.urlbar.trimURLs", false);
 
+// Disable location bar search suggestions.
+user_pref("browser.search.suggest.enabled", false);
+user_pref("browser.urlbar.suggest.searches", false);
+
+// Disable location bar search engine suggestions.
+user_pref("browser.urlbar.suggest.engines", false);
+
 // Disable location bar contextual suggestions.
 user_pref("browser.urlbar.suggest.quicksuggest", false);
 user_pref("browser.urlbar.suggest.quicksuggest.sponsored", false);
+user_pref("browser.urlbar.suggest.topsites", false);
 
 
 
