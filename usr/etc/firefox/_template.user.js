@@ -32,6 +32,10 @@ user_pref("browser.newtabpage.enabled", false);
 user_pref("browser.newtabpage.enhanced", false);
 user_pref("browser.newtab.preload", false);
 
+// Disable contextual feature recommendations.
+user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons", false);
+user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features", false);
+
 // Disable all known content categories for the new tab page, just in case.
 user_pref("browser.newtabpage.activity-stream.feeds.section.highlights", false);
 user_pref("browser.newtabpage.activity-stream.feeds.section.topstories", false);
