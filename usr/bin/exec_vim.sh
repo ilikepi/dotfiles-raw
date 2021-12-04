@@ -9,6 +9,8 @@ case `uname -s` in
       vim_cmd='/Applications/MacVim.app/Contents/MacOS/Vim'
     elif [ -f "${HOME}/Applications/MacVim.app/Contents/MacOS/Vim" ]; then
       vim_cmd="${HOME}/Applications/MacVim.app/Contents/MacOS/Vim"
+    else
+      vim_cmd='/usr/bin/vim'
     fi
     ;;
   Linux)
