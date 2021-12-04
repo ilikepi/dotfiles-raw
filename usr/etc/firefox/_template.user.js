@@ -72,9 +72,18 @@ user_pref("network.IDN_show_punycode", true);
 // Always show the full URL.
 user_pref("browser.urlbar.trimURLs", false);
 
+// Disable location bar search engine suggestions.
+user_pref("browser.urlbar.suggest.engines", false);
+
+// Disable location bar search suggestions.
+user_pref("browser.search.suggest.enabled", false);
+user_pref("browser.urlbar.suggest.searches", false);
+user_pref("browser.urlbar.showSearchSuggestionsFirst", false);
+
 // Disable location bar contextual suggestions.
 user_pref("browser.urlbar.suggest.quicksuggest", false);
 user_pref("browser.urlbar.suggest.quicksuggest.sponsored", false);
+user_pref("browser.urlbar.suggest.topsites", false);
 
 
 
