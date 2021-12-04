@@ -52,3 +52,5 @@
   remote = red bold
 [color "diff"]
   old = red bold
+[init]
+  defaultBranch = main
