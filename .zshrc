@@ -34,6 +34,16 @@ alias ls='ls -FG'
 # 03/10/2013  avoid annoying warnings
 alias scp='scp -o "ClearAllForwardings yes"'
 
+if [[ $(uname -s) == 'Darwin' ]]
+then
+
+  # 10/13/2013  OS X Wifi up/down
+  # 11/15/2015  Use device name in Yosemite
+  alias wifiup='networksetup -setairportpower en0 on'
+  alias wifidown='networksetup -setairportpower en0 off'
+
+fi
+
 
 ### History options
 
