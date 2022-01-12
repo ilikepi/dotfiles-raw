@@ -102,17 +102,12 @@ user_pref("browser.urlbar.suggest.topsites", false);
  * Content Blocking.
  */
 
-// Use "Custom" Content Blocking configuration.
-user_pref("browser.contentblocking.category", "custom");
+// Use "Strict" Enhanced Tracking Protection configuration, which includes
+// Total Cookie Protection (aka dynamic First-Party Isolation).
+user_pref("browser.contentblocking.category", "strict");
 
-// Enable all Tracking Protection features.
-user_pref("privacy.trackingprotection.enabled", true);
-user_pref("privacy.trackingprotection.socialtracking.enabled", true);
-user_pref("privacy.trackingprotection.cryptomining.enabled", true);
-user_pref("privacy.trackingprotection.fingerprinting.enabled", true);
-
-// Block all third-party cookies by default.
-user_pref("network.cookie.cookieBehavior", 1);
+// Enable state partitioning of service workers.
+user_pref("privacy.partition.serviceWorkers", true);
 
 
 
