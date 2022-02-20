@@ -193,6 +193,9 @@ user_pref("network.dns.disablePrefetch", true);
 user_pref("network.predictor.enabled", false);
 user_pref("network.http.speculative-parallel-limit", 0);
 
+// Disable speculative connections when navigating bookmarks and history.
+user_pref("browser.places.speculativeConnect.enabled", false);
+
 // Send DNT even though it won't really matter.
 user_pref("privacy.donottrackheader.enabled", true);
 
