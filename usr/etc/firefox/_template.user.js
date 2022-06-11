@@ -62,6 +62,9 @@ user_pref("signon.autofillForms", false);
 user_pref("signon.generation.enabled", false);
 user_pref("signon.rememberSignons", false);
 
+// Always prompt to download or open a file of an unknown type.
+user_pref("browser.download.always_ask_before_handling_new_types", true);
+
 // Warn when closing a window with more than one tab.
 user_pref("browser.tabs.warnOnClose", true);
 user_pref("browser.warnOnQuitShortcut", false);
