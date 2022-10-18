@@ -55,9 +55,8 @@ user_pref("privacy.userContext.ui.enabled", true);
 // Don't store any form or login data for auto-fill.
 user_pref("browser.formfill.enable", false);
 user_pref("extensions.formautofill.addresses.enabled", false);
-user_pref("extensions.formautofill.available", false);
-user_pref("extensions.formautofill.creditCards.available", false); // [FF57+]
 user_pref("extensions.formautofill.creditCards.enabled", false); // [FF56+]
+user_pref("extensions.formautofill.heuristics.enabled", false); // [FF55+]
 user_pref("signon.autofillForms", false);
 user_pref("signon.generation.enabled", false);
 user_pref("signon.rememberSignons", false);
