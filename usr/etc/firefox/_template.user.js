@@ -111,6 +111,7 @@ user_pref("privacy.partition.serviceWorkers", true);
 
 // Enable APS (Always Partitioning Storage) ***/
 user_pref("privacy.partition.always_partition_third_party_non_cookie_storage", true);
+user_pref("privacy.partition.always_partition_third_party_non_cookie_storage.exempt_sessionstorage", false);
 
 
 
