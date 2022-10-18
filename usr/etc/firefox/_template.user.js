@@ -111,6 +111,9 @@ user_pref("browser.contentblocking.category", "strict");
 // Enable state partitioning of service workers.
 user_pref("privacy.partition.serviceWorkers", true);
 
+// Enable APS (Always Partitioning Storage) ***/
+user_pref("privacy.partition.always_partition_third_party_non_cookie_storage", true);
+
 
 
 /*
