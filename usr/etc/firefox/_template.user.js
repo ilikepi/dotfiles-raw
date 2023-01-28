@@ -78,6 +78,7 @@ user_pref("network.IDN_show_punycode", true);
 
 // Always show the full URL.
 user_pref("browser.urlbar.trimURLs", false);
+user_pref("browser.urlbar.showSearchTerms.enabled", false);
 
 // Set default search engine and hide all others.
 user_pref("browser.urlbar.placeholderName", "DuckDuckGo");
