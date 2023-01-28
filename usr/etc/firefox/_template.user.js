@@ -158,10 +158,6 @@ user_pref("permissions.delegation.enabled", false);
 user_pref("webgl.disabled", true);
 user_pref("webgl.enable-webgl2", false);
 
-// Disable sendBeacon support.
-// https://developer.mozilla.org/docs/Web/API/Navigator/sendBeacon
-user_pref("beacon.enabled", false);
-
 // Disable WASM support.
 user_pref("javascript.options.wasm", false);
 
