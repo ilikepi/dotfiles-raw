@@ -25,13 +25,13 @@ Plug 'tpope/vim-commentary'
 " markup plugins
 Plug 'tpope/vim-haml'
 
-"   " git plugins
-"   Plugin 'tpope/vim-git'
-"   Plugin 'tpope/vim-fugitive'
-
 "   " RoR related
 "   Plugin 'tpope/vim-rails'
 "   Plugin 'tpope/vim-cucumber'
+
+" git plugins
+Plug 'tpope/vim-git'
+Plug 'tpope/vim-fugitive'
 
 " colorschemes
 Plug 'altercation/vim-colors-solarized'
