@@ -22,8 +22,8 @@ Plug 'tpope/vim-commentary'
 "   Plugin 'garbas/vim-snipmate'
 "   Plugin 'honza/vim-snippets'
 
-"   " markup plugins
-"   Plugin 'tpope/vim-haml'
+" markup plugins
+Plug 'tpope/vim-haml'
 
 "   " git plugins
 "   Plugin 'tpope/vim-git'
