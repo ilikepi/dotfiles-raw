@@ -1,49 +1,42 @@
 " 01/12/2012
 set nocompatible
 
-" 01/12/2012  required to initialize Vundle
-filetype off
-
-" 01/12/2012  update runtime path and initialize Vundle
-set rtp+=~/.vim/bundle/Vundle.vim/
-call vundle#begin()
-
-" 01/12/2012  Vundle should manage itself
-Plugin 'VimVundle/Vundle.vim'
+" initialize vim-plug with default plugin directory ('~/.vim/plugged')
+call plug#begin()
 
 " buffer management (via vim-scripts repo)
-Plugin 'bufexplorer.zip'
+Plug 'vim-scripts/bufexplorer.zip'
 
-" fancy status bar
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
+" fancy status bar plugin
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
-" general purpose coding
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-endwise'
-Plugin 'tpope/vim-commentary'
+" general purpose coding plugins
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-characterize'
 
-" a more recent fork of msanders/snipmate.vim (and its dependencies)
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
-Plugin 'garbas/vim-snipmate'
-Plugin 'honza/vim-snippets'
+"   " a more recent fork of msanders/snipmate.vim (and its dependencies)
+"   Plug 'MarcWeber/vim-addon-mw-utils'
+"   Plug 'tomtom/tlib_vim'
+"   Plug 'garbas/vim-snipmate'
+"   Plug 'honza/vim-snippets'
 
 " markup plugins
-Plugin 'tpope/vim-haml'
+Plug 'tpope/vim-haml'
+
+" Ruby on Rails plugins
+Plug 'tpope/vim-rails'
 
 " git plugins
-Plugin 'tpope/vim-git'
-Plugin 'tpope/vim-fugitive'
+Plug 'tpope/vim-git'
+Plug 'tpope/vim-fugitive'
 
-" RoR related
-Plugin 'tpope/vim-rails'
-Plugin 'tpope/vim-cucumber'
+" colorscheme plugins
+Plug 'altercation/vim-colors-solarized'
 
-" colorschemes
-Plugin 'altercation/vim-colors-solarized'
-
-call vundle#end()
+call plug#end()
 
 " tabs are evil
 set et
@@ -79,7 +72,7 @@ autocmd FileType yaml setlocal ai si sw=2
 
 autocmd BufRead,BufNewFile *.json setlocal filetype=json ts=2 sw=2
 
-filetype plugin indent on
+"   filetype plugin indent on
 
 " when folding is enabled, don't start with one mega-fold
 set foldlevelstart=1
@@ -96,7 +89,7 @@ let g:bufExplorerSplitOutPathName=0
 let g:airline_left_sep=''
 let g:airline_right_sep=''
 let g:airline#extensions#branch#enabled=0
-let g:airline_section_b = '⎇ %{strpart(fugitive#head(), 0, 9)}'
+let g:airline_section_b = '⎇ %{strpart(FugitiveHead(), 0, 9)}'
 let g:airline_theme='solarized'
 
 " 11/08/2013  distilled from vim-unimpaired
