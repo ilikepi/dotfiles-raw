@@ -4,8 +4,8 @@ set nocompatible
 " initialize vim-plug with default plugin directory ('~/.vim/plugged')
 call plug#begin()
 
-"   " buffer management (via vim-scripts repo)
-"   Plugin 'bufexplorer.zip'
+" buffer management (via vim-scripts repo)
+Plug 'vim-scripts/bufexplorer.zip'
 
 "   " fancy status bar
 "   Plugin 'vim-airline/vim-airline'
@@ -80,10 +80,10 @@ set foldlevelstart=1
 " 01/12/2012  temporarily disable
 " helptags ~/.vim/doc
 
-"   " configure bufexplorer
-"   let g:bufExplorerDetailedHelp=1
-"   let g:bufExplorerShowRelativePath=1
-"   let g:bufExplorerSplitOutPathName=0
+" configure bufexplorer
+let g:bufExplorerDetailedHelp=1
+let g:bufExplorerShowRelativePath=1
+let g:bufExplorerSplitOutPathName=0
 
 "   " configure vim-airline
 "   let g:airline_left_sep=''
