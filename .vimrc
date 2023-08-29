@@ -7,9 +7,9 @@ call plug#begin()
 " buffer management (via vim-scripts repo)
 Plug 'vim-scripts/bufexplorer.zip'
 
-"   " fancy status bar
-"   Plugin 'vim-airline/vim-airline'
-"   Plugin 'vim-airline/vim-airline-themes'
+" fancy status bar
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 " general purpose coding
 Plug 'tpope/vim-surround'
@@ -84,12 +84,12 @@ let g:bufExplorerDetailedHelp=1
 let g:bufExplorerShowRelativePath=1
 let g:bufExplorerSplitOutPathName=0
 
-"   " configure vim-airline
-"   let g:airline_left_sep=''
-"   let g:airline_right_sep=''
-"   let g:airline#extensions#branch#enabled=0
-"   let g:airline_section_b = '⎇ %{strpart(fugitive#head(), 0, 9)}'
-"   let g:airline_theme='solarized'
+" configure vim-airline
+let g:airline_left_sep=''
+let g:airline_right_sep=''
+let g:airline#extensions#branch#enabled=0
+let g:airline_section_b = '⎇ %{strpart(fugitive#head(), 0, 9)}'
+let g:airline_theme='solarized'
 
 " 11/08/2013  distilled from vim-unimpaired
 nnoremap <silent> [q :cprevious
