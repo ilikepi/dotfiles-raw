@@ -1,15 +1,8 @@
 " 01/12/2012
 set nocompatible
 
-"   " 01/12/2012  required to initialize Vundle
-"   filetype off
-
-"   " 01/12/2012  update runtime path and initialize Vundle
-"   set rtp+=~/.vim/bundle/Vundle.vim/
-"   call vundle#begin()
-
-"   " 01/12/2012  Vundle should manage itself
-"   Plugin 'VimVundle/Vundle.vim'
+" initialize vim-plug with default plugin directory ('~/.vim/plugged')
+call plug#begin()
 
 "   " buffer management (via vim-scripts repo)
 "   Plugin 'bufexplorer.zip'
@@ -43,7 +36,7 @@ set nocompatible
 "   " colorschemes
 "   Plugin 'altercation/vim-colors-solarized'
 
-"   call vundle#end()
+call plug#end()
 
 " tabs are evil
 set et
