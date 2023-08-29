@@ -49,5 +49,5 @@ map <Leader>w3 :set columns=257<CR>:wincmd =<CR>
 map <Leader>w4 :set columns=343<CR>:wincmd =<CR>
 
 " toggle relative/absolute line numbers
-map <Leader>n :set nu<CR>
+map <Leader>n :set nonu<CR>
 map <Leader>N :set rnu<CR>
