@@ -59,7 +59,7 @@ setopt INC_APPEND_HISTORY_TIME
 
 # Allow liberal partial pathname completion.
 zstyle ':completion:*' list-suffixes
-zstyle ':completion:*' expand prefix suffix 
+zstyle ':completion:*' expand prefix suffix
 
 # Initialize the completion system.
 autoload -Uz compinit
