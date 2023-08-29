@@ -35,7 +35,7 @@ alias ls='ls -FG'
 alias scp='scp -o "ClearAllForwardings yes"'
 
 # 10/18/2022  output the entire history, with ISO-style timestamps
-alias history='history 0 -i'
+alias history='history -i 0'
 
 
 ### History options
