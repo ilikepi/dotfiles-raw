@@ -88,7 +88,7 @@ let g:bufExplorerSplitOutPathName=0
 let g:airline_left_sep=''
 let g:airline_right_sep=''
 let g:airline#extensions#branch#enabled=0
-let g:airline_section_b = '⎇ %{strpart(fugitive#head(), 0, 9)}'
+let g:airline_section_b = '⎇ %{strpart(FugitiveHead(), 0, 9)}'
 let g:airline_theme='solarized'
 
 " 11/08/2013  distilled from vim-unimpaired
