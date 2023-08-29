@@ -1,49 +1,49 @@
 " 01/12/2012
 set nocompatible
 
-" 01/12/2012  required to initialize Vundle
-filetype off
+"   " 01/12/2012  required to initialize Vundle
+"   filetype off
 
-" 01/12/2012  update runtime path and initialize Vundle
-set rtp+=~/.vim/bundle/Vundle.vim/
-call vundle#begin()
+"   " 01/12/2012  update runtime path and initialize Vundle
+"   set rtp+=~/.vim/bundle/Vundle.vim/
+"   call vundle#begin()
 
-" 01/12/2012  Vundle should manage itself
-Plugin 'VimVundle/Vundle.vim'
+"   " 01/12/2012  Vundle should manage itself
+"   Plugin 'VimVundle/Vundle.vim'
 
-" buffer management (via vim-scripts repo)
-Plugin 'bufexplorer.zip'
+"   " buffer management (via vim-scripts repo)
+"   Plugin 'bufexplorer.zip'
 
-" fancy status bar
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
+"   " fancy status bar
+"   Plugin 'vim-airline/vim-airline'
+"   Plugin 'vim-airline/vim-airline-themes'
 
-" general purpose coding
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-endwise'
-Plugin 'tpope/vim-commentary'
+"   " general purpose coding
+"   Plugin 'tpope/vim-surround'
+"   Plugin 'tpope/vim-endwise'
+"   Plugin 'tpope/vim-commentary'
 
-" a more recent fork of msanders/snipmate.vim (and its dependencies)
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
-Plugin 'garbas/vim-snipmate'
-Plugin 'honza/vim-snippets'
+"   " a more recent fork of msanders/snipmate.vim (and its dependencies)
+"   Plugin 'MarcWeber/vim-addon-mw-utils'
+"   Plugin 'tomtom/tlib_vim'
+"   Plugin 'garbas/vim-snipmate'
+"   Plugin 'honza/vim-snippets'
 
-" markup plugins
-Plugin 'tpope/vim-haml'
+"   " markup plugins
+"   Plugin 'tpope/vim-haml'
 
-" git plugins
-Plugin 'tpope/vim-git'
-Plugin 'tpope/vim-fugitive'
+"   " git plugins
+"   Plugin 'tpope/vim-git'
+"   Plugin 'tpope/vim-fugitive'
 
-" RoR related
-Plugin 'tpope/vim-rails'
-Plugin 'tpope/vim-cucumber'
+"   " RoR related
+"   Plugin 'tpope/vim-rails'
+"   Plugin 'tpope/vim-cucumber'
 
-" colorschemes
-Plugin 'altercation/vim-colors-solarized'
+"   " colorschemes
+"   Plugin 'altercation/vim-colors-solarized'
 
-call vundle#end()
+"   call vundle#end()
 
 " tabs are evil
 set et
@@ -79,7 +79,7 @@ autocmd FileType yaml setlocal ai si sw=2
 
 autocmd BufRead,BufNewFile *.json setlocal filetype=json ts=2 sw=2
 
-filetype plugin indent on
+"   filetype plugin indent on
 
 " when folding is enabled, don't start with one mega-fold
 set foldlevelstart=1
@@ -87,17 +87,17 @@ set foldlevelstart=1
 " 01/12/2012  temporarily disable
 " helptags ~/.vim/doc
 
-" configure bufexplorer
-let g:bufExplorerDetailedHelp=1
-let g:bufExplorerShowRelativePath=1
-let g:bufExplorerSplitOutPathName=0
+"   " configure bufexplorer
+"   let g:bufExplorerDetailedHelp=1
+"   let g:bufExplorerShowRelativePath=1
+"   let g:bufExplorerSplitOutPathName=0
 
-" configure vim-airline
-let g:airline_left_sep=''
-let g:airline_right_sep=''
-let g:airline#extensions#branch#enabled=0
-let g:airline_section_b = '⎇ %{strpart(fugitive#head(), 0, 9)}'
-let g:airline_theme='solarized'
+"   " configure vim-airline
+"   let g:airline_left_sep=''
+"   let g:airline_right_sep=''
+"   let g:airline#extensions#branch#enabled=0
+"   let g:airline_section_b = '⎇ %{strpart(fugitive#head(), 0, 9)}'
+"   let g:airline_theme='solarized'
 
 " 11/08/2013  distilled from vim-unimpaired
 nnoremap <silent> [q :cprevious

@@ -1,12 +1,12 @@
-" 06/09/2011  solarized options
-let g:solarized_visibility='high'
-let g:solarized_diffmode='high'
+"   " 06/09/2011  solarized options
+"   let g:solarized_visibility='high'
+"   let g:solarized_diffmode='high'
 
-" bufexplorer options specific to gvim
-let g:bufExplorerShowTabBuffer=1
+"   " bufexplorer options specific to gvim
+"   let g:bufExplorerShowTabBuffer=1
 
-set background=dark
-colorscheme solarized
+"   set background=dark
+"   colorscheme solarized
 
 " set visualbell
 
