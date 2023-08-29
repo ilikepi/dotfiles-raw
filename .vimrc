@@ -15,6 +15,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-characterize'
 
 "   " a more recent fork of msanders/snipmate.vim (and its dependencies)
 "   Plugin 'MarcWeber/vim-addon-mw-utils'
