@@ -25,9 +25,8 @@ Plug 'tpope/vim-commentary'
 " markup plugins
 Plug 'tpope/vim-haml'
 
-"   " RoR related
-"   Plugin 'tpope/vim-rails'
-"   Plugin 'tpope/vim-cucumber'
+" RoR related
+Plug 'tpope/vim-rails'
 
 " git plugins
 Plug 'tpope/vim-git'
