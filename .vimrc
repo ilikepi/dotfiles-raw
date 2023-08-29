@@ -33,8 +33,8 @@ call plug#begin()
 "   Plugin 'tpope/vim-rails'
 "   Plugin 'tpope/vim-cucumber'
 
-"   " colorschemes
-"   Plugin 'altercation/vim-colors-solarized'
+" colorschemes
+Plug 'altercation/vim-colors-solarized'
 
 call plug#end()
 
