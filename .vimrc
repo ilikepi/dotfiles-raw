@@ -7,33 +7,33 @@ call plug#begin()
 " buffer management (via vim-scripts repo)
 Plug 'vim-scripts/bufexplorer.zip'
 
-" fancy status bar
+" fancy status bar plugin
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
-" general purpose coding
+" general purpose coding plugins
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-characterize'
 
 "   " a more recent fork of msanders/snipmate.vim (and its dependencies)
-"   Plugin 'MarcWeber/vim-addon-mw-utils'
-"   Plugin 'tomtom/tlib_vim'
-"   Plugin 'garbas/vim-snipmate'
-"   Plugin 'honza/vim-snippets'
+"   Plug 'MarcWeber/vim-addon-mw-utils'
+"   Plug 'tomtom/tlib_vim'
+"   Plug 'garbas/vim-snipmate'
+"   Plug 'honza/vim-snippets'
 
 " markup plugins
 Plug 'tpope/vim-haml'
 
-" RoR related
+" Ruby on Rails plugins
 Plug 'tpope/vim-rails'
 
 " git plugins
 Plug 'tpope/vim-git'
 Plug 'tpope/vim-fugitive'
 
-" colorschemes
+" colorscheme plugins
 Plug 'altercation/vim-colors-solarized'
 
 call plug#end()
