@@ -7,6 +7,10 @@
 # Custom prompt (hostname:dir username% )
 PROMPT='%m:%1~ %n%# '
 
+# Disable Apple session restoration.
+# See /private/etc/zshrc_Apple_Terminal for more details.
+SHELL_SESSIONS_DISABLE=1
+
 
 ### ZLE settings
 
