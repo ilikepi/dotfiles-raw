@@ -41,6 +41,11 @@ alias scp='scp -o "ClearAllForwardings yes"'
 # 10/18/2022  output the entire history, with ISO-style timestamps
 alias history='history -i 0'
 
+# Source external alias definitions.
+if [[ -r ~/.aliasrc.gvim ]]; then
+  source ~/.aliasrc.gvim
+fi
+
 
 ### History options
 

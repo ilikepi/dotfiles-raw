@@ -1,0 +1,62 @@
+
+# Find the best version of Vim for the platform and execute it in GUI mode.
+exec-gvim() {
+  local vim_bin
+
+  case `uname -s` in
+    Darwin)
+      if [ -f /Applications/MacVim.app/Contents/MacOS/Vim ]; then
+        vim_bin='/Applications/MacVim.app/Contents/MacOS/Vim'
+      elif [ -f "${HOME}/Applications/MacVim.app/Contents/MacOS/Vim" ]; then
+        vim_bin="${HOME}/Applications/MacVim.app/Contents/MacOS/Vim"
+      else
+        vim_bin='/usr/bin/vim'
+      fi
+      ;;
+    Linux)
+      vim_bin='/usr/bin/vim'
+      ;;
+    *)
+      echo "$0: ERROR - unhandled OS"
+      exit 1
+      ;;
+  esac
+
+  $vim_bin -g "$@"
+}
+
+
+# Window geometry is based on an 80-column buffer with a 4-column left-hand
+# line number gutter plus a 1-column right-hand separator.  These values are
+# configured in the ~/.gvimrc file.
+alias gvim1="exec-gvim -c 'set columns=85'"
+alias gvim2="exec-gvim -c 'set columns=171'"
+alias gvim3="exec-gvim -c 'set columns=257'"
+alias gvim4="exec-gvim -c 'set columns=343'"
+
+# Use a 3-buffer window by default.
+alias gvim=gvim3
+
+# Open one or more files in an existing window.  No geometry is specified
+# since the window is assumed to exist already.
+export VIM_SERVER=VIM1
+alias gvimr="exec-gvim --servername \$VIM_SERVER --remote"
+
+# Receive piped output.
+alias vin="gvim2 -R --not-a-term -c 'set nowrap cc=' -"
+
+# Open in diff mode.
+alias vimdiff="gvim2 -R -c 'wincmd =' -d"
+
+# Open in "leave no trace" mode - disable viminfo and swap file.
+alias gvimsec="gvim1 -i NONE -n"
+
+
+# Defaults for certain CLI apps that can spawn external editors.
+export BUNDLER_EDITOR="gvim3"
+export GIT_EDITOR="gvim1 -f"
+export HOMEBREW_EDITOR="gvim3 -R"
+export PSQL_EDITOR="gvim3 -f -c 'set filetype=sql'"
+
+
+# vim:filetype=sh
