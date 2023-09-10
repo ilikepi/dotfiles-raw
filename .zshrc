@@ -12,6 +12,15 @@ PROMPT='%m:%1~ %n%# '
 SHELL_SESSIONS_DISABLE=1
 
 
+### App-specific settings
+
+# Homebrew
+export HOMEBREW_NO_ANALYTICS=1
+export HOMEBREW_NO_AUTO_UPDATE=1
+export HOMEBREW_NO_INSECURE_REDIRECT=1
+export HOMEBREW_NO_INSTALL_CLEANUP=1
+
+
 ### ZLE settings
 
 # Use viins mode.
