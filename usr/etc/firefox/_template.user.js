@@ -140,6 +140,9 @@ user_pref("extensions.htmlaboutaddons.recommendations.enabled", false);
 // Disable bypass of 3rd-party extention install prompt.
 user_pref("extensions.postDownloadThirdPartyPrompt", false);
 
+// Enforce Quarantined Domains.
+user_pref("extensions.quarantinedDomains.enabled", true);
+
 
 
 /*
