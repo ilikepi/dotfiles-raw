@@ -24,6 +24,9 @@ user_pref("startup.homepage_override_url", "");
 // Don't add a "What's New" icon on first launch after installing an update.
 user_pref("browser.messaging-system.whatsNewPanel.enabled", false);
 
+// Don't receive the 2023 Shopping Experience.
+user_pref("browser.shopping.experience2023.enabled", false);
+
 // Don't check whether Firefox is the default browser.
 user_pref("browser.shell.checkDefaultBrowser", false);
 
