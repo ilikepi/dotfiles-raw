@@ -109,13 +109,6 @@ user_pref("browser.urlbar.suggest.topsites", false);
 // Total Cookie Protection (aka dynamic First-Party Isolation).
 user_pref("browser.contentblocking.category", "strict");
 
-// Enable state partitioning of service workers.
-user_pref("privacy.partition.serviceWorkers", true);
-
-// Enable APS (Always Partitioning Storage) ***/
-user_pref("privacy.partition.always_partition_third_party_non_cookie_storage", true);
-user_pref("privacy.partition.always_partition_third_party_non_cookie_storage.exempt_sessionstorage", false);
-
 
 
 /*
@@ -148,10 +141,6 @@ user_pref("extensions.quarantinedDomains.enabled", true);
 /*
  * Web APIs.
  */
-
-// When an iframed page causes a permissions prompt to appear, show the origin
-// of the third-party rather than the first-party that embeds the iframe.
-user_pref("permissions.delegation.enabled", false);
 
 // Block requests for access to desktop features.
 // NOTE: Keep default "Always Ask"; disabling can be used for fingerprinting.
