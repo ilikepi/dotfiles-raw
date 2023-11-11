@@ -46,6 +46,9 @@ user_pref("browser.newtabpage.activity-stream.showSponsoredTopSites", false);
 // Clear topsites list.
 user_pref("browser.newtabpage.activity-stream.default.sites", "");
 
+// Explicitly disable ridiculous VPN promo.
+user_pref("browser.vpn_promo.enabled", false);
+
 // Enable Container Tabs.
 user_pref("privacy.userContext.enabled", true);
 user_pref("privacy.userContext.ui.enabled", true);
