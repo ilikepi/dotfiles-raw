@@ -57,7 +57,6 @@ user_pref("privacy.userContext.ui.enabled", true);
 user_pref("browser.formfill.enable", false);
 user_pref("extensions.formautofill.addresses.enabled", false);
 user_pref("extensions.formautofill.creditCards.enabled", false); // [FF56+]
-user_pref("extensions.formautofill.heuristics.enabled", false); // [FF55+]
 user_pref("signon.autofillForms", false);
 user_pref("signon.generation.enabled", false);
 user_pref("signon.rememberSignons", false);
