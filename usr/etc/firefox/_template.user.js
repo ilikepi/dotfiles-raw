@@ -98,6 +98,13 @@ user_pref("browser.urlbar.showSearchSuggestionsFirst", false);
 user_pref("browser.urlbar.suggest.quicksuggest.nonsponsored", false);
 user_pref("browser.urlbar.suggest.quicksuggest.sponsored", false);
 user_pref("browser.urlbar.suggest.topsites", false);
+user_pref("browser.urlbar.addons.featureGate", false);
+user_pref("browser.urlbar.mdn.featureGate", false);
+user_pref("browser.urlbar.pocket.featureGate", false);
+user_pref("browser.urlbar.weather.featureGate", false);
+
+// Disable location bar trending search suggestions.
+user_pref("browser.urlbar.trending.featureGate", false);
 
 
 
