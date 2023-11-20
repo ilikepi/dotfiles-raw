@@ -58,6 +58,11 @@ fi
 
 ### History options
 
+# Ensure we are actually capturing history.
+if [[ -z "${HISTFILE}" ]]; then
+  HISTFILE=${HOME}/.zsh_history
+fi
+
 # Increase the size of the History buffer.
 HISTSIZE=4096
 SAVEHIST=4096
