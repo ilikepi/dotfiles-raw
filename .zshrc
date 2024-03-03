@@ -73,6 +73,12 @@ SAVEHIST=4096
 # Include timestamps.
 setopt EXTENDED_HISTORY
 
+# Don't record commands prefixed with a space.
+setopt HIST_IGNORE_SPACE
+
+# Don't record invocations of the `history` command.
+setopt HIST_NO_STORE
+
 # Record to HISTFILE at command completion rather than at shell termination.
 setopt INC_APPEND_HISTORY_TIME
 
