@@ -11,6 +11,9 @@ PROMPT='%m:%1~ %n%# '
 # See /private/etc/zshrc_Apple_Terminal for more details.
 SHELL_SESSIONS_DISABLE=1
 
+# Allow comments in interactive shells.
+setopt INTERACTIVE_COMMENTS
+
 
 ### App-specific settings
 
