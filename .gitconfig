@@ -30,12 +30,12 @@
   dsro = diff --stat --right-only
   graph = log --graph --decorate --oneline
   merges = log --merges --decorate --oneline
-  md = log --merges --date=short --pretty=format:'%C(yellow)%h %C(cyan)%cd %C(magenta)%cN %Creset%s'
+  md = log --merges --date=short --pretty=format:'%C(yellow)%h %C(cyan)%cd %C(magenta)%aN %Creset%s'
   mdp = log --merges --date=short --pretty=format:'%h %cd %s'
   mdc = log --merges --date=short --pretty=format:'%h %cd %cN %s'
   lo = log --oneline
   loro = log --oneline --right-only
-  ld = log --date=short --pretty=format:'%C(yellow)%h %C(cyan)%cd %C(magenta)%cN%C(red bold)%d %Creset%s'
+  ld = log --date=short --pretty=format:'%C(yellow)%h %C(cyan)%cd %C(magenta)%aN%C(red bold)%d %Creset%s'
   logrop = log --right-only --reverse -p
   std = stash list --pretty=format:'%C(yellow)%h %C(cyan)%ai %C(red bold)%gd%n    %Creset%s'
   mb = merge-base --fork-point master
