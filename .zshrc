@@ -53,8 +53,8 @@ alias scp='scp -o "ClearAllForwardings yes"'
 alias history='history -i 0'
 
 # Source external alias definitions.
-if [[ -r ~/.aliasrc.gvim ]]; then
-  source ~/.aliasrc.gvim
+if [[ -r "${HOME}/.aliasrc.gvim" ]]; then
+  source "${HOME}/.aliasrc.gvim"
 fi
 
 
@@ -91,3 +91,5 @@ zstyle ':completion:*' expand prefix suffix
 # Initialize the completion system.
 autoload -Uz compinit
 compinit
+
+# vim:sw=2 ts=2 et filetype=zsh
