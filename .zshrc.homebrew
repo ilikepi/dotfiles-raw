@@ -1,0 +1,12 @@
+#
+# Configure interactive shells for Homebrew.
+#
+
+### App-specific settings
+
+export HOMEBREW_NO_ANALYTICS=1
+export HOMEBREW_NO_AUTO_UPDATE=1
+export HOMEBREW_NO_INSECURE_REDIRECT=1
+export HOMEBREW_NO_INSTALL_CLEANUP=1
+
+# vim:sw=2 ts=2 et filetype=zsh
