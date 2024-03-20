@@ -7,11 +7,10 @@
 # Ensure entries in $PATH are unique.
 typeset -U path
 
-# Prepend entries for keg-only Homebrew formulae bin directories.
-path=(/opt/homebrew/opt/postgresql@11/bin $path)
-
-# Prepend entries for Homebrew bin directories.
-path=(/opt/homebrew/bin /opt/homebrew/sbin $path)
+# Add Homebrew paths if necessary.
+if [[ -r "${HOME}/.zprofile.homebrew" ]]; then
+  source "${HOME}/.zprofile.homebrew"
+fi
 
 # Prepend entries for user-specific bin directories.
 path=(~/bin ~/usr/bin $path)

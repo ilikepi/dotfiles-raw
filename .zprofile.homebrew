@@ -1,0 +1,17 @@
+#
+# Configure login shells for Homebrew.
+#
+
+### PATH
+
+if [[ -d /opt/homebrew/ ]]; then
+  # Prepend entries for keg-only Homebrew formulae bin directories.
+  if [[ -d /opt/homebrew/opt/postgresql@11 ]]; then
+    path=(/opt/homebrew/opt/postgresql@11/bin $path)
+  fi
+
+  # Prepend entries for Homebrew's default bin directories.
+  path=(/opt/homebrew/bin /opt/homebrew/sbin $path)
+fi
+
+# vim:sw=2 ts=2 et filetype=zsh
