@@ -1,0 +1,7 @@
+#
+# Configure color prompt for systems that deserve it.
+#
+
+PROMPT='%F{green}%m%f:%1~ %n%# '
+
+# vim:sw=2 ts=2 et filetype=zsh

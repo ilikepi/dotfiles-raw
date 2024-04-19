@@ -5,7 +5,11 @@
 ### Basic settings
 
 # Custom prompt (hostname:dir username% )
-PROMPT='%m:%1~ %n%# '
+if [[ -r "${HOME}/.zshrc.colorprompt" ]]; then
+  source "${HOME}/.zshrc.colorprompt"
+else
+  PROMPT='%m:%1~ %n%# '
+fi
 
 # Disable Apple session restoration.
 # See /private/etc/zshrc_Apple_Terminal for more details.
