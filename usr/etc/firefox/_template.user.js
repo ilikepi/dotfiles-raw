@@ -123,6 +123,10 @@ user_pref("browser.urlbar.trending.featureGate", false);
 // Total Cookie Protection (aka dynamic First-Party Isolation).
 user_pref("browser.contentblocking.category", "strict");
 
+// Block Data Loss Prevention agents.
+user_pref("browser.contentanalysis.enabled", false);
+user_pref("browser.contentanalysis.default_result", 0);
+
 
 
 /*
