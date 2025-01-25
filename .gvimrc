@@ -51,3 +51,6 @@ map <Leader>w4 :set columns=343<CR>:wincmd =<CR>
 " toggle relative/absolute line numbers
 map <Leader>n :set nonu<CR>
 map <Leader>N :set rnu<CR>
+
+" open current file in new tab without closing existing tab
+map <Leader>t :tabe %<CR>
