@@ -201,6 +201,7 @@ user_pref("network.prefetch-next", false);
 
 // Disable DNS prefetching.
 user_pref("network.dns.disablePrefetch", true);
+user_pref("network.dns.disablePrefetchFromHTTPS", true);
 
 // Disable speculative prefetching.
 user_pref("network.predictor.enabled", false);
