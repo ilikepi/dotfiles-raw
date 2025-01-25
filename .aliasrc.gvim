@@ -53,10 +53,10 @@ alias gvimsec="gvim1 -i NONE -n"
 
 
 # Defaults for certain CLI apps that can spawn external editors.
-export BUNDLER_EDITOR="gvim3"
-export GIT_EDITOR="gvim1 -f"
-export HOMEBREW_EDITOR="gvim3 -R"
-export PSQL_EDITOR="gvim3 -f -c 'set filetype=sql'"
+export BUNDLER_EDITOR="exec_vim.sh -g -f"
+export GIT_EDITOR="exec_vim.sh -g -f"
+export HOMEBREW_EDITOR="exec_vim.sh -g -f -R"
+export PSQL_EDITOR="exec_vim.sh -g -f -c 'set filetype=sql'"
 
 
 # vim:filetype=sh
